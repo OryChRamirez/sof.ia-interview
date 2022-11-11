@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+ @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+  }
+  
+body {
+    display: flex;
+    justify-content: center;
+}
+.contGeneral {
+    display: flex;
+    width: 26.75rem;
+    height: 57.875rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#seccWelcome {
+    display: flex;
+    background-image: url('img/Landing.png');
+}
+
+.btnContinue {
+    display: flex;
+    position: absolute;
+    width: 19.125rem;
+    height: 4.8125rem;
+    border: none;
+    border-radius: 6rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90%;
+    box-shadow: -8px 16px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#seccA, .headerClass, .footerClass, #seccC {
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.secctionA {
+    color: white;
+    font-size: 17rem;
+    align-self: flex-start;
+
+}
+
+.slide-bottom {
+	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
